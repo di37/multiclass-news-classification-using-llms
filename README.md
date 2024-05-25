@@ -1,20 +1,22 @@
 ## Text Classification with Large Language Models - Llama3, Llama3:70B, Mixtral:8x7B, and GPT-3.5-Turbo
 
-The objective of this project is to evaluate the performance of Large Language Models (LLMs) in multi-class classification tasks using few-shot prompting.
-We have selected the [BBC News Dataset](https://www.kaggle.com/datasets/pariza/bbc-news-summary) from Kaggle for our analysis. This dataset categorizes news articles into five classes: Business, Technology, Sports, Politics, and Entertainment.
+This project evaluates the effectiveness of large language models (LLMs) in performing multi-class text classification using few-shot prompting. Text classification is crucial for organizing information, enhancing search engines, and improving user interaction. Our study uses the [BBC News Dataset](https://www.kaggle.com/datasets/pariza/bbc-news-summary) categorizing news articles into Business, Technology, Sports, Politics, and Entertainment.
 
-Firstly we will see the obtained results and its interpretations followed by conclusion and future work. Later we will, focus on reproducing this project evaluation is the main objective of this project.
+**Key Objectives:**
+- To benchmark the performance of various LLMs.
+- To demonstrate the application of few-shot learning in real-world datasets.
 
 ## Accuracy, Precision, Recall, F1 Score and Time Taken
 
 Following are the results for the news classification task using different Language Models (LLMs) on a 500-sample test dataset.
 
-| accuracy | precision | recall   | f1       | model         | time_taken_in_seconds |
-| -------- | --------- | -------- | -------- | ------------- | --------------------- |
-| 0.886    | 0.796789  | 0.894913 | 0.800293 | llama3:8b     | 360                   |
-| 0.976    | 0.981302  | 0.977032 | 0.978721 | llama3:70b    | 720                   |
-| 0.914    | 0.827455  | 0.821479 | 0.843914 | mixtral:8x7b  | 540                   |
-| 0.962    | 0.805873  | 0.802054 | 0.803609 | gpt-3.5-turbo | 900                   |
+| Model         | Accuracy | Precision | Recall   | F1 Score | Time Taken (s) |
+|---------------|----------|-----------|----------|----------|----------------|
+| Llama3:8b     | 0.886    | 0.796789  | 0.894913 | 0.800293 | 360            |
+| Llama3:70b    | 0.976    | 0.981302  | 0.977032 | 0.978721 | 720            |
+| Mixtral:8x7b  | 0.914    | 0.827455  | 0.821479 | 0.843914 | 540            |
+| GPT-3.5-Turbo | 0.962    | 0.805873  | 0.802054 | 0.803609 | 900            |
+
 
 Based on the provided results for the news classification task using different Language Models (LLMs) on a 500-sample unseen test dataset, here are the interpretations:
 
