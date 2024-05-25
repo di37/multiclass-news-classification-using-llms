@@ -1,22 +1,30 @@
-## Text Classification with Large Language Models - Llama3, Llama3:70B, Mixtral:8x7B, and GPT-3.5-Turbo
+# Text Classification with Large Language Models - Llama3, Llama3:70B, Mixtral:8x7B, and GPT-3.5-Turbo
+
+## Project Overview
 
 This project evaluates the effectiveness of large language models (LLMs) in performing multi-class text classification using few-shot prompting. Text classification is crucial for organizing information, enhancing search engines, and improving user interaction. Our study uses the [BBC News Dataset](https://www.kaggle.com/datasets/pariza/bbc-news-summary) categorizing news articles into Business, Technology, Sports, Politics, and Entertainment.
 
 **Key Objectives:**
+
 - To benchmark the performance of various LLMs.
 - To demonstrate the application of few-shot learning in real-world datasets.
 
-## Accuracy, Precision, Recall, F1 Score and Time Taken
+## Results and Interpretations
 
-Following are the results for the news classification task using different Language Models (LLMs) on a 500-sample test dataset.
+We have conducted tests using a 500-sample dataset to evaluate the performance of each model. Below is a summary of our findings presented through various metrics:
+
+**Tabular Representation**
 
 | Model         | Accuracy | Precision | Recall   | F1 Score | Time Taken (s) |
-|---------------|----------|-----------|----------|----------|----------------|
+| ------------- | -------- | --------- | -------- | -------- | -------------- |
 | Llama3:8b     | 0.886    | 0.796789  | 0.894913 | 0.800293 | 360            |
 | Llama3:70b    | 0.976    | 0.981302  | 0.977032 | 0.978721 | 720            |
 | Mixtral:8x7b  | 0.914    | 0.827455  | 0.821479 | 0.843914 | 540            |
 | GPT-3.5-Turbo | 0.962    | 0.805873  | 0.802054 | 0.803609 | 900            |
 
+**Graphical Representation**
+
+![graphical_representation](https://github.com/di37/multiclass-news-classification-using-llms/blob/main/screenshots/results.png?raw=true){ width=50% }
 
 Based on the provided results for the news classification task using different Language Models (LLMs) on a 500-sample unseen test dataset, here are the interpretations:
 
