@@ -3,6 +3,25 @@
 The objective of this project is to evaluate the performance of Large Language Models (LLMs) in multi-class classification tasks using few-shot prompting.
 We have selected the [BBC News Dataset](https://www.kaggle.com/datasets/pariza/bbc-news-summary) from Kaggle for our analysis. This dataset categorizes news articles into five classes: Business, Technology, Sports, Politics, and Entertainment.
 
+## Environment Setup
+
+It is assumed ollama is already installed in the PC. 
+
+1. Create a virtual environment:
+```bash
+conda create -n text-classification-using-llms python=3.11
+```
+2. Activate the virtual environment:
+```bash
+conda activate text-classification-using-llms
+```
+3. Install all the required packages:
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Project
+
 To reproduce this project, you can follow along the notebooks in `workflow` directory done step by step.
 
 1. `01_Dataset_Preparation.ipynb`: Few shot examples selected and injected to the user prompt followed careful preparation of the test dataset such that few shot example doesn't get included in the test dataset and also managed to maintain the balance of the dataset. Also, dataset is split into 10 smaller datasets to avoid repeating experiment from scratch if anything goes wrong.
