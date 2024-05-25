@@ -9,7 +9,7 @@ This project evaluates the effectiveness of large language models (LLMs) in perf
 - To benchmark the performance of various LLMs.
 - To demonstrate the application of few-shot learning in real-world datasets.
 
-## Results and Interpretations
+## Results and Interpretations - Accuracy, Precision, Recall, and F1 Score
 
 We have conducted tests using a 500-sample dataset to evaluate the performance of each model. Below is a summary of our findings presented through various metrics:
 
@@ -78,7 +78,7 @@ Since gpt-3.5-turbo is proprietory, we are unaware of how much GPU is consumed a
 
 ![Llama3:70B GPU Usage](https://github.com/di37/multiclass-news-classification-using-llms/blob/main/screenshots/llama3_70b.png?raw=true)
 
-## Confusion Matrix
+## Results and Interpretations - Confusion Matrix
 
 Let's analyze each model's confusion matrix, focusing on misclassifications:
 
